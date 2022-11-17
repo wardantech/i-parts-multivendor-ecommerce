@@ -1,0 +1,38 @@
+/* Modify by Shahriar Shaon -- Wardan tech Ltd. */
+.top-search-form-control {
+  border-radius: 0;
+  border: 2px solid #000 !important;
+}
+
+.input-group-append .btn-pri {
+  background-color: #3665f3 !important;
+  color: white;
+  margin-left: 10px;
+  border-radius: 0;
+  padding: 0.6rem 2.2rem;
+}
+
+.second-nav {
+  padding: 10px 40px;
+}
+
+.second-nav .sbc-btn {
+  margin-top: 10px;
+}
+
+.menu-item-home P {
+    border-bottom: 2px solid #000;
+}
+
+
+.hov-shadow-md:hover {
+    box-shadow: none !important;
+}
+
+.product-img {
+    border-radius: 50%;
+}
+
+.hov-shadow-md:hover .product-img {
+    border: 2px solid plum;
+}
