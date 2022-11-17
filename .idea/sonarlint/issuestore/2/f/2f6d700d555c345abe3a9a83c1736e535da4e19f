@@ -1,0 +1,5 @@
+
+^php:S103#"KSplit this 123 characters long line (which is greater than 120 authorized).(ç—Ì
+j	php:S1192b"UDefine a constant instead of duplicating this literal "Something went wrong" 5 times.(œªÜó
+?	php:S1481¨")Remove this unused "$key" local variable.(ÿ²Óó
+E	php:S1066Ž"/Merge this if statement with the enclosing one.(ážà¥

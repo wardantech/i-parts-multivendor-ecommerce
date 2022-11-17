@@ -48,7 +48,6 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function(
     Route::post('/bulk-seller-delete', 'SellerController@bulk_seller_delete')->name('bulk-seller-delete');
     Route::get('/sellers/view/{id}/verification', 'SellerController@show_verification_request')->name('sellers.show_verification_request');
     Route::get('/sellers/approve/{id}', 'SellerController@approve_seller')->name('sellers.approve');
-    Route::get('/sellers/status/{id}', 'SellerController@status_seller')->name('sellers.status');
     Route::get('/sellers/reject/{id}', 'SellerController@reject_seller')->name('sellers.reject');
     Route::get('/sellers/login/{id}', 'SellerController@login')->name('sellers.login');
     Route::post('/sellers/payment_modal', 'SellerController@payment_modal')->name('sellers.payment_modal');
@@ -223,6 +222,8 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function(
 
     Route::post('/sellers/profile_modal', 'SellerController@profile_modal')->name('sellers.profile_modal');
     Route::post('/sellers/approved', 'SellerController@updateApproved')->name('sellers.approved');
+    Route::post('/sellers/status', 'SellerController@status_seller')->name('sellers.status');
+
 
     Route::resource('attributes', 'AttributeController');
     Route::get('/attributes/edit/{id}', 'AttributeController@edit')->name('attributes.edit');

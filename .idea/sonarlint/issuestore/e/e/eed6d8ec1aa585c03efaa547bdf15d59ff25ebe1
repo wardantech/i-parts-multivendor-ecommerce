@@ -1,0 +1,34 @@
+
+dphp:S103("KSplit this 152 characters long line (which is greater than 120 authorized).(ü¯ğæûÿÿÿÿ
+dphp:S1031"KSplit this 139 characters long line (which is greater than 120 authorized).(†“îıÿÿÿÿ
+_php:S103F"KSplit this 156 characters long line (which is greater than 120 authorized).(‰ë–
+dphp:S103V"KSplit this 124 characters long line (which is greater than 120 authorized).(ÙÏ†”şÿÿÿÿ
+dphp:S103Z"KSplit this 125 characters long line (which is greater than 120 authorized).(Ê‚¨ÿÿÿÿÿ
+^php:S103["KSplit this 124 characters long line (which is greater than 120 authorized).(›«Ü-
+^php:S103\"KSplit this 124 characters long line (which is greater than 120 authorized).(‘¤‘R
+dphp:S103^"KSplit this 121 characters long line (which is greater than 120 authorized).(Ö½œºøÿÿÿÿ
+_php:S103o"KSplit this 132 characters long line (which is greater than 120 authorized).(ÂÎœê
+dphp:S103p"KSplit this 141 characters long line (which is greater than 120 authorized).(áÏÁİşÿÿÿÿ
+dphp:S103q"KSplit this 130 characters long line (which is greater than 120 authorized).(İ‚çıÿÿÿÿ
+_php:S103r"KSplit this 152 characters long line (which is greater than 120 authorized).(ÙÉë©
+_php:S103w"KSplit this 125 characters long line (which is greater than 120 authorized).(å Õº
+dphp:S103{"KSplit this 127 characters long line (which is greater than 120 authorized).(íÖæÎıÿÿÿÿ
+_php:S103|"KSplit this 132 characters long line (which is greater than 120 authorized).(Ö¦Ë«
+dphp:S103}"KSplit this 137 characters long line (which is greater than 120 authorized).(€™Şÿÿÿÿÿ
+dphp:S103~"KSplit this 127 characters long line (which is greater than 120 authorized).(ÏÈ¦Ôøÿÿÿÿ
+ephp:S103–"KSplit this 124 characters long line (which is greater than 120 authorized).(ŒçÉÁùÿÿÿÿ
+`php:S103—"KSplit this 127 characters long line (which is greater than 120 authorized).(£ÈÚ
+ephp:S103˜"KSplit this 142 characters long line (which is greater than 120 authorized).(­Ö£ºúÿÿÿÿ
+`php:S103³"KSplit this 135 characters long line (which is greater than 120 authorized).(Ö´ûŸ
+ephp:S103ë"KSplit this 126 characters long line (which is greater than 120 authorized).(€Şˆ·ÿÿÿÿÿ
+`php:S103ì"KSplit this 128 characters long line (which is greater than 120 authorized).(³Ü¸Ø
+ephp:S103ú"KSplit this 122 characters long line (which is greater than 120 authorized).(Õ½–ªüÿÿÿÿ
+ephp:S103€"KSplit this 122 characters long line (which is greater than 120 authorized).(‹¨å–øÿÿÿÿ
+ephp:S103„"KSplit this 134 characters long line (which is greater than 120 authorized).(ÇİÆ“ùÿÿÿÿ
+`php:S103‡"KSplit this 133 characters long line (which is greater than 120 authorized).(ôŞš
+ephp:S103ˆ"KSplit this 149 characters long line (which is greater than 120 authorized).(şİêøÿÿÿÿÿ
+f	php:S1808"QPut exactly one space between the "function" keyword and the opening parenthesis.(û“í®
+g	php:S1808"QPut exactly one space between the "function" keyword and the opening parenthesis.(¼¸¢¸
+Q	php:S1808"6Put exactly one space after comma separated arguments.(’„Ïøÿÿÿÿ
+4php:S125Š"Remove this commented out code.(Õ º¼
+Œphp:S138"xThis function expression has 194 lines, which is greater than the 150 lines authorized. Split it into smaller functions.(û“í®

@@ -1,0 +1,31 @@
+
+MWeb:TableWithoutCaptionCheck," Add a description to this table.(ùÉ‰ıÿÿÿÿ
+IWeb:AvoidCommentedOutCodeCheck/"Remove this commented out code.(âÕ‘
+C	Web:S1827B")Remove this deprecated "width" attribute.(ÀÜÉ‚üÿÿÿÿ
+NWeb:AvoidCommentedOutCodeCheckI"Remove this commented out code.(Ùë™ıÿÿÿÿ
+HWeb:BoldAndItalicTagsChecku"Replace this <i> tag by <em>.(»ú©úÿÿÿÿ
+V	php:S1131ë"@Remove the useless trailing whitespaces at the end of this line.(†››”
+V	php:S1131ï"@Remove the useless trailing whitespaces at the end of this line.(³‚¥‹
+_php:S103"KSplit this 132 characters long line (which is greater than 120 authorized).(Ëÿ»ª
+_php:S103 "KSplit this 142 characters long line (which is greater than 120 authorized).(èÕµí
+_php:S103!"KSplit this 148 characters long line (which is greater than 120 authorized).(¯£³ó
+_php:S103&"KSplit this 201 characters long line (which is greater than 120 authorized).(õ¤ÜÙ
+dphp:S103N"KSplit this 121 characters long line (which is greater than 120 authorized).(µÂ—úÿÿÿÿ
+_php:S103T"KSplit this 162 characters long line (which is greater than 120 authorized).(¬Å¿”
+_php:S103`"KSplit this 181 characters long line (which is greater than 120 authorized).(…”Óì
+_php:S103f"KSplit this 166 characters long line (which is greater than 120 authorized).(ùÖ¨³
+dphp:S103t"KSplit this 247 characters long line (which is greater than 120 authorized).(Ä€ƒøûÿÿÿÿ
+dphp:S103x"KSplit this 125 characters long line (which is greater than 120 authorized).(áŞÂÛÿÿÿÿÿ
+_php:S103{"KSplit this 121 characters long line (which is greater than 120 authorized).(—üğÆ
+dphp:S103~"KSplit this 130 characters long line (which is greater than 120 authorized).(Œ±Ü¥ûÿÿÿÿ
+`php:S103"KSplit this 131 characters long line (which is greater than 120 authorized).(Ğ¬ı
+`php:S103ˆ"KSplit this 140 characters long line (which is greater than 120 authorized).(×»¯ô
+`php:S103"KSplit this 142 characters long line (which is greater than 120 authorized).(Í‹œ“
+ephp:S103’"KSplit this 152 characters long line (which is greater than 120 authorized).(—óØ«úÿÿÿÿ
+ephp:S103‹"KSplit this 128 characters long line (which is greater than 120 authorized).(çšß€şÿÿÿÿ
+ephp:S103›"KSplit this 126 characters long line (which is greater than 120 authorized).(‚ÌÂ·ûÿÿÿÿ
+ephp:S103"KSplit this 122 characters long line (which is greater than 120 authorized).(ûï‰Šùÿÿÿÿ
+Y	php:S1808`"DPut one space between this "if" keyword and the opening parenthesis.(…”Óì
+Y	php:S1808f"DPut one space between this "if" keyword and the opening parenthesis.(ùÖ¨³
+Dphp:S121`"0Add curly braces around the nested statement(s).(…”Óì
+Dphp:S121f"0Add curly braces around the nested statement(s).(ùÖ¨³
