@@ -27,7 +27,11 @@ class ShopController extends Controller
     public function index()
     {
         $shop = Auth::user()->shop;
-        return view('frontend.user.seller.shop', compact('shop'));
+        $sellerApprove = Seller::where('user_id', $shop->user_id)->where('status', 1)->first();
+        if($sellerApprove!=null){
+            return view('frontend.user.seller.shop', compact('shop'));
+        } 
+        return view('frontend.user.seller.approval_pending');
     }
 
     /**
