@@ -211,7 +211,18 @@ class SellerController extends Controller
         flash(translate('Something went wrong'))->error();
         return back();
     }
-
+    public function status_seller($id)
+    {
+        $seller = Seller::findOrFail($id);
+        $seller->status = 1;
+        if ($seller->save()) {
+            Cache::forget('verified_sellers_id');
+            flash(translate('Seller registation has been approved successfully'))->success();
+            return redirect()->route('sellers.index');
+        }
+        flash(translate('Something went wrong'))->error();
+        return back();
+    }
     public function reject_seller($id)
     {
         $seller = Seller::findOrFail($id);
