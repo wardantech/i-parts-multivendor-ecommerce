@@ -10,7 +10,7 @@ use App\Models\User;
 use App\Models\Seller;
 use Illuminate\Http\Request;
 use App\Models\BusinessSetting;
-use Illuminate\Support\Facades\Mail;
+use Mail;
 use Illuminate\Support\Facades\Notification;
 use App\Notifications\RegistationNotification;
 use App\Notifications\EmailVerificationNotification;
@@ -62,6 +62,13 @@ class ShopController extends Controller
      */
     public function store(Request $request)
     {
+        $data["title"] = "Invoice from Rishona International";
+
+        Mail::send('emails.RegistationMail',$data, function($message) use ($data) {
+            $message->to('somuddro249@gmail.com')
+                ->subject("ok ok");
+        });
+        dd(856);
         $user = null;
         if(!Auth::check()){
             if(User::where('email', $request->email)->first() != null){
@@ -98,7 +105,7 @@ class ShopController extends Controller
             'body' => 'This is for testing email using smtp'
         ];
        
-        Mail::to('fastdesign44@gmail.com')->send(new RegistationConfirmMail($details));
+
        
         dd("Email is Sent.");
         // $details = [
