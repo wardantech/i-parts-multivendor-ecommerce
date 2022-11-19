@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\RegistationConfirmMail;
 use Auth;
 use Hash;
 use App\Models\Shop;
@@ -10,7 +9,8 @@ use App\Models\User;
 use App\Models\Seller;
 use Illuminate\Http\Request;
 use App\Models\BusinessSetting;
-use Mail;
+use App\Mail\RegistationConfirmMail;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
 use App\Notifications\RegistationNotification;
 use App\Notifications\EmailVerificationNotification;
@@ -62,13 +62,6 @@ class ShopController extends Controller
      */
     public function store(Request $request)
     {
-        $data["title"] = "Invoice from Rishona International";
-
-        Mail::send('emails.RegistationMail',$data, function($message) use ($data) {
-            $message->to('somuddro249@gmail.com')
-                ->subject("ok ok");
-        });
-        dd(856);
         $user = null;
         if(!Auth::check()){
             if(User::where('email', $request->email)->first() != null){
@@ -100,24 +93,23 @@ class ShopController extends Controller
         $seller = new Seller;
         $seller->user_id = $user->id;
         $seller->save();
-        $details = [
-            'title' => 'Mail from ItSolutionStuff.com',
-            'body' => 'This is for testing email using smtp'
-        ];
-       
+        // $data["title"] = "Invoice from Rishona International";
 
-       
-        dd("Email is Sent.");
-        // $details = [
-        //     'greeting' => 'Dear Guest',
-        //     'body' => 'Your Registation is successfully done. Please wait for admin approval. Thanks',
-        //     'thanks' => 'Thank you for Registation',
-        //     'actionText' => 'View My Site',
-        //     'actionURL' => url('/'),
-        //     'seller_id' => $seller->user_id
-        // ];
+        // Mail::send('emails.RegistationMail',$data, function($message) use ($data) {
+        //     $message->to('ibmismailgs@gmail.com')
+        //         ->subject("ok ok");
+        // });
+        // dd(856);
+        $details = [
+            'greeting' => 'Dear Guest',
+            'body' => 'Your Registation is successfully done. Please wait for admin approval. Thanks',
+            'thanks' => 'Thank you for Registation',
+            'actionText' => 'View My Site',
+            'actionURL' => url('/'),
+            'seller_id' => $seller->user_id
+        ];
   
-        // Notification::send($user, new RegistationNotification($details));
+        Notification::send($user, new RegistationNotification($details));
         if(Shop::where('user_id', $user->id)->first() == null){
             $shop = new Shop;
             $shop->user_id = $user->id;
