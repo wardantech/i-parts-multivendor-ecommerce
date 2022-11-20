@@ -1,0 +1,25 @@
+
+dphp:S103R"KSplit this 133 characters long line (which is greater than 120 authorized).(²Ñ±çüÿÿÿÿ
+W	php:S1808"=Move this open curly brace to the beginning of the next line.(êŠú¢şÿÿÿÿ
+W	php:S1808"=Move this open curly brace to the beginning of the next line.(È¬ıåşÿÿÿÿ
+R	php:S1808"=Move this open curly brace to the beginning of the next line.(¼şõ
+W	php:S1808 "=Move this open curly brace to the beginning of the next line.(ë»§½ùÿÿÿÿ
+R	php:S1808)"=Move this open curly brace to the beginning of the next line.(ÁÆ€Û
+R	php:S1808-"=Move this open curly brace to the beginning of the next line.(Ñ’¹ê
+R	php:S18081"=Move this open curly brace to the beginning of the next line.(ıÓ¬¬
+W	php:S18085"=Move this open curly brace to the beginning of the next line.(Û´¤…ıÿÿÿÿ
+R	php:S1808P"=Move this open curly brace to the beginning of the next line.(ş±ğ»
+R	php:S1808a"=Move this open curly brace to the beginning of the next line.(Ù’šº
+R	php:S1808g"=Move this open curly brace to the beginning of the next line.(åÍØí
+W	php:S1808p"=Move this open curly brace to the beginning of the next line.(€Çâ†úÿÿÿÿ
+_	php:S1808""JPut one space between the closing parenthesis and the opening curly brace.(ÉÚ»ƒ
+Y	php:S1808""DPut one space between this "if" keyword and the opening parenthesis.(ÉÚ»ƒ
+^	php:S1808R"DPut one space between this "if" keyword and the opening parenthesis.(²Ñ±çüÿÿÿÿ
+^	php:S1808i"DPut one space between this "if" keyword and the opening parenthesis.(ÍãöÖÿÿÿÿÿ
+{	php:S1808u"fEither split this list into multiple lines, aligned at column "16" or put all arguments on line "116".(âëá³
+{	php:S1808t"fEither split this list into multiple lines, aligned at column "16" or put all arguments on line "116".(Í¡šŸ
+b	php:S1784g"MExplicitly mention the visibility of this method "check_database_connection".(åÍØí
+_	php:S1126i"EReplace this "if-then-else" statement by a single "return" statement.(ÍãöÖÿÿÿÿÿ
+8php:S125!"Remove this commented out code.(Ù¿öúÿÿÿÿ
+8php:S125K"Remove this commented out code.(ÃºÃ‹ıÿÿÿÿ
+8php:S125N"Remove this commented out code.(şşÑïüÿÿÿÿ

@@ -1,0 +1,56 @@
+
+a	php:S1131%"@Remove the useless trailing whitespaces at the end of this line.(æÀö€øÿÿÿÿ8¢úßœÉ0
+[	php:S1131¿"@Remove the useless trailing whitespaces at the end of this line.(§²ÈÒüÿÿÿÿ
+7php:S905‡""Remove or refactor this statement.(ãóßø
+`php:S103Ç"KSplit this 155 characters long line (which is greater than 120 authorized).(³Ò³†
+[	php:S18084"FMove this "else" to the same line as the previous closing curly brace.(á¢–¬
+[	php:S1808T"FMove this "else" to the same line as the previous closing curly brace.(á¢–¬
+[	php:S1808O"FMove this "else" to the same line as the previous closing curly brace.(á¢–¬
+\	php:S1808…"FMove this "else" to the same line as the previous closing curly brace.(á¢–¬
+[	php:S1808~"FMove this "else" to the same line as the previous closing curly brace.(á¢–¬
+\	php:S1808Î"FMove this "else" to the same line as the previous closing curly brace.(á¢–¬
+^	php:S1808Ç"HMove this "elseif" to the same line as the previous closing curly brace.(³Ò³†
+c	php:S1808ì"FMove this "else" to the same line as the previous closing curly brace.(á¢–¬8¤úßœÉ0
+^	php:S1808ı"HMove this "elseif" to the same line as the previous closing curly brace.(ïçïÊ
+c	php:S1808‚"HMove this "elseif" to the same line as the previous closing curly brace.(ÓûÉÑşÿÿÿÿ
+^	php:S1808‡"HMove this "elseif" to the same line as the previous closing curly brace.(ª¨€Í
+d	php:S1808#"JPut one space between the closing parenthesis and the opening curly brace.(×ïùûÿÿÿÿ
+d	php:S18080"JPut one space between the closing parenthesis and the opening curly brace.(˜„í¼şÿÿÿÿ
+_	php:S1808B"JPut one space between the closing parenthesis and the opening curly brace.(¨á¯Ü
+_	php:S1808C"JPut one space between the closing parenthesis and the opening curly brace.(È¶Ê£
+_	php:S1808G"JPut one space between the closing parenthesis and the opening curly brace.(Úˆè²
+d	php:S1808V"JPut one space between the closing parenthesis and the opening curly brace.(ë€Ñ…ùÿÿÿÿ
+_	php:S1808q"JPut one space between the closing parenthesis and the opening curly brace.(¬Œòç
+_	php:S1808x"JPut one space between the closing parenthesis and the opening curly brace.(”Ç×
+_	php:S1808z"JPut one space between the closing parenthesis and the opening curly brace.(Š‡©ß
+`	php:S1808±"JPut one space between the closing parenthesis and the opening curly brace.(…ü”
+`	php:S1808Ç"JPut one space between the closing parenthesis and the opening curly brace.(³Ò³†
+`	php:S1808Ò"JPut one space between the closing parenthesis and the opening curly brace.(”Ç×
+`	php:S1808è"JPut one space between the closing parenthesis and the opening curly brace.(¾ÅŠİ
+`	php:S1808‘"JPut one space between the closing parenthesis and the opening curly brace.(áà¥
+^	php:S1808#"DPut one space between this "if" keyword and the opening parenthesis.(×ïùûÿÿÿÿ
+^	php:S18080"DPut one space between this "if" keyword and the opening parenthesis.(˜„í¼şÿÿÿÿ
+b	php:S18084"FPut one space between this "else" keyword and the opening curly brace.(á¢–¬8¬úßœÉ0
+Y	php:S1808B"DPut one space between this "if" keyword and the opening parenthesis.(¨á¯Ü
+`	php:S1808C"DPut one space between this "if" keyword and the opening parenthesis.(È¶Ê£8¬úßœÉ0
+`	php:S1808G"DPut one space between this "if" keyword and the opening parenthesis.(Úˆè²8¬úßœÉ0
+b	php:S1808O"FPut one space between this "else" keyword and the opening curly brace.(á¢–¬8­úßœÉ0
+b	php:S1808T"FPut one space between this "else" keyword and the opening curly brace.(á¢–¬8­úßœÉ0
+e	php:S1808V"DPut one space between this "if" keyword and the opening parenthesis.(ë€Ñ…ùÿÿÿÿ8®úßœÉ0
+`	php:S1808q"DPut one space between this "if" keyword and the opening parenthesis.(¬Œòç8®úßœÉ0
+`	php:S1808x"DPut one space between this "if" keyword and the opening parenthesis.(”Ç×8®úßœÉ0
+`	php:S1808z"DPut one space between this "if" keyword and the opening parenthesis.(Š‡©ß8®úßœÉ0
+c	php:S1808…"FPut one space between this "else" keyword and the opening curly brace.(á¢–¬8®úßœÉ0
+a	php:S1808±"DPut one space between this "if" keyword and the opening parenthesis.(…ü”8®úßœÉ0
+f	php:S1808¿"DPut one space between this "if" keyword and the opening parenthesis.(§²ÈÒüÿÿÿÿ8®úßœÉ0
+e	php:S1808Ç"HPut one space between this "elseif" keyword and the opening parenthesis.(³Ò³†8®úßœÉ0
+c	php:S1808Î"FPut one space between this "else" keyword and the opening curly brace.(á¢–¬8®úßœÉ0
+a	php:S1808Ò"DPut one space between this "if" keyword and the opening parenthesis.(”Ç×8®úßœÉ0
+a	php:S1808è"DPut one space between this "if" keyword and the opening parenthesis.(¾ÅŠİ8®úßœÉ0
+a	php:S1808‘"DPut one space between this "if" keyword and the opening parenthesis.(áà¥8®úßœÉ0
+X	php:S1142?"<This method has 4 returns, which is more than the 3 allowed.(ã÷ÕÖ8®úßœÉ0
+p	php:S3776?"TRefactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.(ã÷ÕÖ8®úßœÉ0
+x	php:S1192Œ"]Define a constant instead of duplicating this literal "Sorry! Something went wrong." 3 times.(•Ÿ‘Äùÿÿÿÿ
+?	php:S1481ö")Remove this unused "$key" local variable.(ÅÉ¨ä
+:php:S125`"Remove this commented out code.(œ°œï8®úßœÉ0
+:php:S125b"Remove this commented out code.(äúÖ8®úßœÉ0
