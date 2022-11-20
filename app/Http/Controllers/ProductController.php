@@ -2,24 +2,26 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Models\Product;
-use App\Models\ProductTranslation;
-use App\Models\ProductStock;
-use App\Models\Category;
-use App\Models\FlashDealProduct;
-use App\Models\ProductTax;
-use App\Models\AttributeValue;
-use App\Models\Cart;
-use App\Models\Color;
-use App\Models\User;
-use Auth;
-use Carbon\Carbon;
-use Combinations;
-use CoreComponentRepository;
-use Artisan;
-use Cache;
 use Str;
+use Auth;
+use Cache;
+use Artisan;
+use Combinations;
+use Carbon\Carbon;
+use App\Models\Cart;
+use App\Models\User;
+use App\Models\Color;
+use App\Models\Product;
+use App\Models\Category;
+use App\Models\ProductTax;
+use App\Models\ProductStock;
+use CoreComponentRepository;
+use Illuminate\Http\Request;
+use App\Models\AttributeValue;
+use App\Models\FlashDealProduct;
+use App\Models\ProductTranslation;
+use App\Notifications\ProductApprovedNotification;
+use Illuminate\Support\Facades\Notification;
 
 class ProductController extends Controller
 {
@@ -883,7 +885,28 @@ class ProductController extends Controller
     {
         $product = Product::findOrFail($request->id);
         $product->published = $request->status;
-
+        $userMail = User::where('id', $product->user_id)->first();
+        if($request->status == 1){
+            $details = [
+                'greeting' => 'Dear Guest',
+                'body' => 'Your Product has been Approved by Admin. Thanks',
+                'thanks' => 'Thank you for Registation',
+                'actionText' => 'View My Site',
+                'actionURL' => url('/'),
+                'product_id' => $product->user_id
+            ];
+        }else{
+            $details = [
+                'greeting' => 'Dear Guest',
+                'body' => 'Your Product has been Cancelled By Admin',
+                'thanks' => 'Please Contact Our Support',
+                'actionText' => 'View My Site',
+                'actionURL' => url('/'),
+                'product_id' => $product->user_id
+            ];  
+        }
+       
+        Notification::send($userMail, new ProductApprovedNotification($details));
         if($product->added_by == 'seller' && addon_is_activated('seller_subscription')){
             $seller = $product->user->seller;
             if($seller->invalid_at != null && $seller->invalid_at != '0000-00-00' && Carbon::now()->diffInDays(Carbon::parse($seller->invalid_at), false) <= 0){
