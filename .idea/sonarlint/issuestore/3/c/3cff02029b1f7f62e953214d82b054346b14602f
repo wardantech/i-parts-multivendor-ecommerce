@@ -1,0 +1,13 @@
+
+_php:S1030"KSplit this 158 characters long line (which is greater than 120 authorized).(ëñí±
+d	php:S1808""JPut one space between the closing parenthesis and the opening curly brace.(©ÉÃÏÿÿÿÿÿ
+k	php:S1808"QPut exactly one space between the "function" keyword and the opening parenthesis.(´óÇàúÿÿÿÿ
+P	php:S1808"6Put exactly one space after comma separated arguments.(àß—§ýÿÿÿÿ
+P	php:S1808$"6Put exactly one space after comma separated arguments.(ÑúÐñùÿÿÿÿ
+K	php:S18080"6Put exactly one space after comma separated arguments.(ëñí±
+K	php:S18082"6Put exactly one space after comma separated arguments.(¯†€É
+^	php:S1808"DPut one space between this "if" keyword and the opening parenthesis.(á¨¶Íùÿÿÿÿ
+Y	php:S1808"DPut one space between this "if" keyword and the opening parenthesis.(çˆãª
+^	php:S1808"DPut one space between this "if" keyword and the opening parenthesis.(…Ç‰Õÿÿÿÿÿ
+^	php:S1808""DPut one space between this "if" keyword and the opening parenthesis.(©ÉÃÏÿÿÿÿÿ
+L	php:S3972"7Move this "if" to a new line or add the missing "else".(çˆãª
