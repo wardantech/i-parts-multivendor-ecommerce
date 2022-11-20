@@ -2,16 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Models\Seller;
-use App\Models\User;
-use App\Models\Shop;
-use App\Models\Product;
-use App\Models\Order;
-use App\Models\OrderDetail;
-use Illuminate\Support\Facades\Hash;
-use App\Notifications\EmailVerificationNotification;
 use Cache;
+use App\Models\Shop;
+use App\Models\User;
+use App\Models\Order;
+use App\Models\Seller;
+use App\Models\Product;
+use App\Models\OrderDetail;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Notification;
+use App\Notifications\EmailVerificationNotification;
+use App\Notifications\RegistationNotification;
+use App\Notifications\StoreApprovalNotification;
 
 class SellerController extends Controller
 {
@@ -215,6 +218,28 @@ class SellerController extends Controller
     {
         $seller = Seller::findOrFail($request->id);
         $seller->status = $request->status;
+        $userMail = User::where('id', $seller->user_id)->first();
+        if($request->status == 1){
+            $details = [
+                'greeting' => 'Dear Guest',
+                'body' => 'Your Registration is successfully Approved by Admin. Thanks',
+                'thanks' => 'Thank you for Registation',
+                'actionText' => 'View My Site',
+                'actionURL' => url('/'),
+                'seller_id' => $seller->user_id
+            ];
+        }else{
+            $details = [
+                'greeting' => 'Dear Guest',
+                'body' => 'Your Registration is Cancelled By Admin',
+                'thanks' => 'Please Contact Our Support',
+                'actionText' => 'View My Site',
+                'actionURL' => url('/'),
+                'seller_id' => $seller->user_id
+            ];  
+        }
+       
+        Notification::send($userMail, new RegistationNotification($details));
         if ($seller->save()) {
             Cache::forget('verified_sellers_id');
             return 1;
@@ -252,6 +277,28 @@ class SellerController extends Controller
     {
         $seller = Seller::findOrFail($request->id);
         $seller->verification_status = $request->status;
+        $userMail = User::where('id', $seller->user_id)->first();
+        if($request->status == 1){
+            $details = [
+                'greeting' => 'Dear Guest',
+                'body' => 'Your Store Registration is Approved by Admin. Thanks',
+                'thanks' => 'Thank you for Registation',
+                'actionText' => 'View My Site',
+                'actionURL' => url('/'),
+                'seller_id' => $seller->user_id
+            ];
+        }else{
+            $details = [
+                'greeting' => 'Dear Guest',
+                'body' => 'Your Store Registration is Cancelled By Admin',
+                'thanks' => 'Please Contact Our Support',
+                'actionText' => 'View My Site',
+                'actionURL' => url('/'),
+                'seller_id' => $seller->user_id
+            ];  
+        }
+       
+        Notification::send($userMail, new StoreApprovalNotification($details));
         if ($seller->save()) {
             Cache::forget('verified_sellers_id');
             return 1;
