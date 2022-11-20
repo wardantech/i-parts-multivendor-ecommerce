@@ -126,6 +126,9 @@ class HomeController extends Controller
      */
     public function dashboard()
     {
+        $shop = Auth::user()->shop;
+        $sellerApprove = Seller::where('user_id', $shop->user_id)->where('status', 1)->first();
+        if($sellerApprove!=null){
         if(Auth::user()->user_type == 'seller'){
             return view('frontend.user.seller.dashboard');
         }
@@ -137,7 +140,9 @@ class HomeController extends Controller
         }
         else {
             abort(404);
-        }
+        }}
+        return view('frontend.user.seller.approval_pending');
+
     }
 
     public function profile(Request $request)

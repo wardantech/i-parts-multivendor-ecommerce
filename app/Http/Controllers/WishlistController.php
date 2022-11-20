@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Auth;
-use App\Models\Wishlist;
+use App\Models\Seller;
 use App\Models\Category;
+use App\Models\Wishlist;
+use Illuminate\Http\Request;
 
 class WishlistController extends Controller
 {
@@ -17,7 +18,12 @@ class WishlistController extends Controller
     public function index()
     {
         $wishlists = Wishlist::where('user_id', Auth::user()->id)->paginate(9);
-        return view('frontend.user.view_wishlist', compact('wishlists'));
+        $shop = Auth::user()->shop;
+        $sellerApprove = Seller::where('user_id', $shop->user_id)->where('status', 1)->first();
+        if($sellerApprove!=null){
+            return view('frontend.user.view_wishlist', compact('wishlists'));
+        } 
+        return view('frontend.user.seller.approval_pending');
     }
 
     /**
