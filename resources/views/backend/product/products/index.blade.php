@@ -258,11 +258,13 @@
         function update_published(el){
             if(el.checked){
                 var status = 1;
+                var is_publish = 1;
             }
             else{
                 var status = 0;
+                var is_publish = 0;
             }
-            $.post('{{ route('products.published') }}', {_token:'{{ csrf_token() }}', id:el.value, status:status}, function(data){
+            $.post('{{ route('products.published') }}', {_token:'{{ csrf_token() }}', id:el.value, status:status, is_publish:is_publish}, function(data){
                 if(data == 1){
                     AIZ.plugins.notify('success', '{{ translate('Published products updated successfully') }}');
                 }

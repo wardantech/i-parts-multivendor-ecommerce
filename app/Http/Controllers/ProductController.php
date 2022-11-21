@@ -885,6 +885,7 @@ class ProductController extends Controller
     {
         $product = Product::findOrFail($request->id);
         $product->published = $request->status;
+        $product->isproduct_published = $request->is_publish;
         $userMail = User::where('id', $product->user_id)->first();
         if($request->status == 1){
             $details = [
