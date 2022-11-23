@@ -143,7 +143,7 @@
                     <div class="form-group row">
                         <label class="col-md-3 col-from-label">{{translate('Video Provider')}}</label>
                         <div class="col-md-8">
-                            <select class="form-control aiz-selectpicker" name="video_provider" id="video_provider">
+                            <select class="form-control" name="video_provider" id="video_provider">
                                 <option value="youtube">{{translate('Youtube')}}</option>
                                 <option value="dailymotion">{{translate('Dailymotion')}}</option>
                                 <option value="vimeo">{{translate('Vimeo')}}</option>
