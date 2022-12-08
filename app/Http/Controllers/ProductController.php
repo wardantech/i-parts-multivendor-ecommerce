@@ -314,7 +314,7 @@ class ProductController extends Controller
 
         $product->choice_options = json_encode($choice_options, JSON_UNESCAPED_UNICODE);
 
-        $product->published = 1;
+        $product->published = 0;
         if($request->button == 'unpublish' || $request->button == 'draft') {
             $product->published = 0;
         }
